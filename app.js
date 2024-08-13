@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, "public")))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.set("view engine", "ejs")
+require("dotenv").config()
 
 let waitingUser = []
 let room = {}
@@ -59,4 +60,4 @@ app.get("/chat", (req, res) => {
     res.render("chat")
 })
 
-server.listen(3000)
+server.listen(process.env.PORT)
