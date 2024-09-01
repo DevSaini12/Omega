@@ -54,10 +54,19 @@ io.on("connection", (socket) => {
 
 
 app.get("/", (req, res) => {
-    res.render("index")
+    res.render("Home")
 })
 app.get("/chat", (req, res) => {
     res.render("chat")
+})
+app.get("/login", (req, res) => {
+    res.render("Login")
+})
+app.get("/register", (req, res) => {
+    res.render("register")
+})
+app.get("/profile", (req, res) => {
+    res.render("profile")
 })
 
 server.listen(process.env.PORT)
