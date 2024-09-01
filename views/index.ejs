@@ -6,14 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Omegle Clone</title>
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
 
-<body class="flex items-center justify-center h-screen bg-gray-200">
-  <div class="bg-white flex items-center flex-col p-8 rounded-lg shadow-md w-full max-w-xs">
-    <h1 class="text-2xl font-bold mb-4 text-center">Welcome to Omegle Clone</h1>
-    <a href="/chat" class="w-full text-center bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">Start
-      Chat</a>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+</style>
+
+<body style='font-family: "Poppins"' class="bg-black ">
+  <div class="div w-[100vw] h-[100vh] overflow-x-hidden ">
+    <div class="top w-full h-[60%] flex justify-center items-center">
+      <div class="left flex flex-col  w-full p-10 h-full text-white">
+        <h1 class="text-5xl tracking-tighter">Omegle-Global Chat Your Next Conversation Starts Here!</h1>
+        <div class="div w-full h-14 flex mt-5 justify-start px-10 items-center gap-10 ">
+          <span
+            class=" bg-gray-600 p-2 rounded-md  tracking-widest text-sm flex items-center justify-center gap-1  ">Video
+            calling
+            <img class="w-3" src="https://cdn-icons-png.flaticon.com/128/5508/5508719.png" alt="">
+          </span>
+          <span
+            class=" bg-gray-600 p-2 rounded-md  tracking-widest text-sm flex items-center justify-center gap-1  ">Chating
+            friends
+            <img class="w-3" src="https://cdn-icons-png.flaticon.com/128/9046/9046845.png" alt="">
+          </span>
+          <span
+            class=" bg-gray-600 p-2 rounded-md  tracking-widest text-sm flex items-center justify-center gap-1  ">Chating
+            friends
+            <img class="w-3" src="https://cdn-icons-png.flaticon.com/128/8512/8512887.png" alt="">
+          </span>
+        </div>
+        <button onclick="showLoginPage()" class="w-52  p-3 mt-16 ml-52 bg-blue-600 rounded-lg">
+          Make Call
+        </button>
+
+      </div>
+      <div class="right relative h-full flex justify-center items-center w-full  p-5 ">
+        <div class="div w-[80%] h-full rounded-lg ">
+          <img class="w-full h-full object-cover rounded-lg"
+            src="https://www.ringcentral.com/content/dam/rc-www/en_us/images/content/seo/video-group-chat/ringcentral-video-png-rendition.webp"
+            alt="">
+        </div>
+      </div>
+    </div>
+    <div class=" text-container container flex flex-col w-full h-[100%]   ">
+      <div
+        class="div p-5  mb-10    w-full bg-[url(https://png.pngtree.com/thumb_back/fh260/background/20210224/pngtree-blue-abstract-background-business-image_564246.jpg)] h-52  bg-clip-text bg-transparent ">
+        <h1 class="text-[10rem] text-transparent font-semibold text-center  tracking-tighter  ">
+          Global Talk.</h1>
+      </div>
+      <div class="div flex justify-center items-center gap-20 w-full h-60 ">
+        <div class="w-52 h-52 rounded-xl border-2 flex flex-col items-center justify-center gap-4">
+          <img class="w-24" src="https://cdn-icons-png.flaticon.com/128/9187/9187515.png" alt="">
+          <h1 class="text-white text-xl font-semibold tracking-tighter">Video Calling</h1>
+        </div>
+        <div class="w-52 h-52 rounded-xl border-2 flex flex-col items-center justify-center gap-4">
+          <img class="w-24" src="https://cdn-icons-png.flaticon.com/128/3220/3220829.png" alt="">
+          <h1 class="text-white text-xl font-semibold tracking-tighter">Make Friends</h1>
+        </div>
+        <div class="w-52 h-52 rounded-xl border-2 flex flex-col items-center justify-center gap-4">
+          <img class="w-24" src="https://cdn-icons-png.flaticon.com/128/2731/2731266.png" alt="">
+          <h1 class="text-white text-xl font-semibold tracking-tighter">Chating Friends</h1>
+        </div>
+      </div>
+    </div>
   </div>
+  <script>
+    function showLoginPage() {
+      window.location.href = "/login"
+    } 
+  </script>
 </body>
 
 </html>

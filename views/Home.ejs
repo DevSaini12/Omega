@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    .fade-in {
+        opacity: 0;
+        transition: opacity 500ms ease-out;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+    }
+</style>
+
+<body class="bg-black w-screen h-screen overflow-x-hidden">
+    <!-- hero - start -->
+    <div class="bg-white pb-6 sm:pb-8 lg:pb-12 ">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <header class="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
+                <!-- logo - start -->
+                <a href="/" class="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
+                    aria-label="logo">
+                    <svg width="95" height="94" viewBox="0 0 95 94" class="h-auto w-6 text-indigo-500"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M96 0V47L48 94H0V47L48 0H96Z" />
+                    </svg>
+
+                    Omegle
+                </a>
+                <!-- logo - end -->
+
+                <!-- nav - start -->
+                <nav class="hidden gap-12 lg:flex">
+                    <a href="#" class="text-lg font-semibold text-indigo-500">Home</a>
+                    <a href="#"
+                        class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
+
+                </nav>
+                <!-- nav - end -->
+
+                <!-- buttons - start -->
+                <a href="#"
+                    class="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Contact</a>
+
+                <button type="button"
+                    class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    Menu
+                </button>
+                <!-- buttons - end -->
+            </header>
+
+            <section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row fade-in">
+                <!-- content - start -->
+                <div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
+                    <p class="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">Very proud to introduce
+                    </p>
+
+                    <h1 class="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl">Build Immersive
+                        Video Experience with Video Call</h1>
+
+                    <p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">Embed real-time video
+                        calling , chating with friends and make a connection with friends</p>
+
+                    <div class="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
+                        <a href="#"
+                            class="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Find
+                            friend</a>
+
+                    </div>
+                </div>
+                <!-- content - end -->
+
+                <!-- image - start -->
+                <div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
+                    <img src="https://www.zegocloud.com/_nuxt/img/img_zegoclouduikit@2x.bab21a7.jpg" loading="lazy"
+                        alt="Photo by Fakurian Design" class="h-full w-full object-cover object-center" />
+                </div>
+                <!-- image - end -->
+            </section>
+        </div>
+    </div>
+    <!-- hero - end -->
+
+    <!-- features - start -->
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <!-- text - start -->
+            <div class="mb-10 md:mb-16">
+                <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Our new features</h2>
+                <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">On this platform, I have
+                    implemented and enhanced several new features, including video calling, chat functionality, friend
+                    requests and acceptance, and group chat capabilities.
+                </p>
+            </div>
+            <!-- text - end -->
+
+            <div class="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16">
+                <!-- feature - start -->
+                <div class="fade-in flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <img class="h-6 w-6" src="https://img.icons8.com/?size=48&id=eYAFTPotWz15&format=gif" alt="">
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Video Calling</h3>
+                    </div>
+                </div>
+                <!-- feature - end -->
+
+                <!-- feature - start -->
+                <div class="fade-in flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <img class="h-6 w-6" src="https://cdn-icons-gif.flaticon.com/15595/15595837.gif" alt="">
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Real time Chating</h3>
+                    </div>
+                </div>
+                <!-- feature - end -->
+
+                <!-- feature - start -->
+                <div class="fade-in flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <img class="w-6 h-6" src="https://cdn-icons-gif.flaticon.com/16275/16275730.gif" alt="">
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Make Friends</h3>
+                    </div>
+                </div>
+                <!-- feature - end -->
+
+                <!-- feature - start -->
+                <div class="fade-in flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <img class="w-6 h-6" src="https://cdn-icons-gif.flaticon.com/16059/16059819.gif" alt="">
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Group Chat</h3>
+                    </div>
+                </div>
+                <!-- feature - end -->
+
+                <!-- feature - start -->
+                <div class="fade-in flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <img class="w-6 h-6" src="https://cdn-icons-gif.flaticon.com/12754/12754654.gif" alt="">
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Upload Images</h3>
+                    </div>
+                </div>
+                <!-- feature - end -->
+
+                <!-- feature - start -->
+                <div class="fade-in flex gap-4 md:gap-6">
+                    <div
+                        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-white shadow-lg md:h-14 md:w-14 md:rounded-xl">
+                        <img class="w-6 h-6" src="https://cdn-icons-gif.flaticon.com/17569/17569442.gif" alt="">
+                    </div>
+                    <div>
+                        <h3 class="mb-2 text-lg font-semibold md:text-xl">Profile Dashboard</h3>
+                    </div>
+                </div>
+                <!-- feature - end -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-white py-6 sm:py-8 lg:py-12 ">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8 fade-in">
+            <!-- text - start -->
+            <div class="mb-10 md:mb-16">
+                <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">Let's Connect
+                </h2>
+
+                <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple
+                    filler text, also known as placeholder text. It shares some characteristics of a real written text
+                    but is random or otherwise generated.</p>
+            </div>
+            <!-- text - end -->
+
+            <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 fade-in">
+                <!-- person - start -->
+                <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                    <div
+                        class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                        <img src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=256"
+                            loading="lazy" alt="Photo by Radu Florin"
+                            class="h-full w-full object-cover object-center" />
+                    </div>
+
+                    <div>
+                        <div class="text-center font-bold text-indigo-500 md:text-lg">John McCulling</div>
+                        <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Founder / CEO</p>
+
+                        <!-- social - start -->
+                        <div class="flex justify-center">
+                            <div class="flex gap-4">
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- social - end -->
+                    </div>
+                </div>
+                <!-- person - end -->
+
+                <!-- person - start -->
+                <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                    <div
+                        class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                        <img src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=256"
+                            loading="lazy" alt="Photo by christian ferrer"
+                            class="h-full w-full object-cover object-center" />
+                    </div>
+
+                    <div>
+                        <div class="text-center font-bold text-indigo-500 md:text-lg">Kate Berg</div>
+                        <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">CFO</p>
+
+                        <!-- social - start -->
+                        <div class="flex justify-center">
+                            <div class="flex gap-4">
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- social - end -->
+                    </div>
+                </div>
+                <!-- person - end -->
+
+                <!-- person - start -->
+                <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                    <div
+                        class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                        <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=256"
+                            loading="lazy" alt="Photo by Ayo Ogunseinde"
+                            class="h-full w-full object-cover object-center" />
+                    </div>
+
+                    <div>
+                        <div class="text-center font-bold text-indigo-500 md:text-lg">Greg Jackson</div>
+                        <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">CTO</p>
+
+                        <!-- social - start -->
+                        <div class="flex justify-center">
+                            <div class="flex gap-4">
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- social - end -->
+                    </div>
+                </div>
+                <!-- person - end -->
+
+                <!-- person - start -->
+                <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                    <div
+                        class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                        <img src="https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?auto=format&q=75&fit=crop&w=256"
+                            loading="lazy" alt="Photo by Midas Hofstra"
+                            class="h-full w-full object-cover object-center" />
+                    </div>
+
+                    <div>
+                        <div class="text-center font-bold text-indigo-500 md:text-lg">Robert Greyson</div>
+                        <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Creative Director</p>
+
+                        <!-- social - start -->
+                        <div class="flex justify-center">
+                            <div class="flex gap-4">
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- social - end -->
+                    </div>
+                </div>
+                <!-- person - end -->
+
+                <!-- person - start -->
+                <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                    <div
+                        class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                        <img src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?auto=format&q=75&fit=crop&w=256"
+                            loading="lazy" alt="Photo by Elizeu Dias"
+                            class="h-full w-full object-cover object-center" />
+                    </div>
+
+                    <div>
+                        <div class="text-center font-bold text-indigo-500 md:text-lg">John Roberts</div>
+                        <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Investor Relations</p>
+
+                        <!-- social - start -->
+                        <div class="flex justify-center">
+                            <div class="flex gap-4">
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- social - end -->
+                    </div>
+                </div>
+                <!-- person - end -->
+
+                <!-- person - start -->
+                <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                    <div
+                        class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                        <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&q=75&fit=crop&w=256"
+                            loading="lazy" alt="Photo by Matheus Ferrero"
+                            class="h-full w-full object-cover object-center" />
+                    </div>
+
+                    <div>
+                        <div class="text-center font-bold text-indigo-500 md:text-lg">Judy Amandez</div>
+                        <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Senior Art Director</p>
+
+                        <!-- social - start -->
+                        <div class="flex justify-center">
+                            <div class="flex gap-4">
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- social - end -->
+                    </div>
+                </div>
+                <!-- person - end -->
+
+                <!-- person - start -->
+                <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                    <div
+                        class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                        <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&q=75&fit=crop&w=256"
+                            loading="lazy" alt="Photo by Leilani Angel"
+                            class="h-full w-full object-cover object-center" />
+                    </div>
+
+                    <div>
+                        <div class="text-center font-bold text-indigo-500 md:text-lg">Rahul Williams</div>
+                        <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Creative Director</p>
+
+                        <!-- social - start -->
+                        <div class="flex justify-center">
+                            <div class="flex gap-4">
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- social - end -->
+                    </div>
+                </div>
+                <!-- person - end -->
+
+                <!-- person - start -->
+                <div class="flex flex-col items-center rounded-lg bg-gray-100 p-4 lg:p-8">
+                    <div
+                        class="mb-2 h-24 w-24 overflow-hidden rounded-full bg-gray-200 shadow-lg md:mb-4 md:h-32 md:w-32">
+                        <img src="https://images.unsplash.com/photo-1562904403-a5106bef8319?auto=format&q=75&fit=crop&w=256"
+                            loading="lazy" alt="Photo by Jernej Graj"
+                            class="h-full w-full object-cover object-center" />
+                    </div>
+
+                    <div>
+                        <div class="text-center font-bold text-indigo-500 md:text-lg">Ari Ferris</div>
+                        <p class="mb-3 text-center text-sm text-gray-500 md:mb-4 md:text-base">Marketing Analyst</p>
+
+                        <!-- social - start -->
+                        <div class="flex justify-center">
+                            <div class="flex gap-4">
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+
+                                <a href="#" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- social - end -->
+                    </div>
+                </div>
+                <!-- person - end -->
+            </div>
+        </div>
+    </div>
+    <!-- team - end -->
+
+    <!-- testemonials - start -->
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+            <h2 class="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">What others say about us
+            </h2>
+
+            <div class="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x">
+                <!-- quote - start -->
+                <div class="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
+                    <div class="text-center text-gray-600">“This is a section of some simple filler text, also known as
+                        placeholder text.”</div>
+
+                    <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+                        <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+                            <img src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112"
+                                loading="lazy" alt="Photo by Radu Florin"
+                                class="h-full w-full object-cover object-center" />
+                        </div>
+
+                        <div>
+                            <div class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">John
+                                McCulling</div>
+                            <p class="text-center text-sm text-gray-500 sm:text-left md:text-sm">CEO / Datadrift</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- quote - end -->
+
+                <!-- quote - start -->
+                <div class="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
+                    <div class="text-center text-gray-600">“This is a section of some simple filler text, also known as
+                        placeholder text.”</div>
+
+                    <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+                        <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+                            <img src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112"
+                                loading="lazy" alt="Photo by christian ferrer"
+                                class="h-full w-full object-cover object-center" />
+                        </div>
+
+                        <div>
+                            <div class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">Kate
+                                Berg</div>
+                            <p class="text-center text-sm text-gray-500 sm:text-left md:text-sm">CFO / Dashdash</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- quote - end -->
+
+                <!-- quote - start -->
+                <div class="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
+                    <div class="text-center text-gray-600">“This is a section of some simple filler text, also known as
+                        placeholder text.”</div>
+
+                    <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+                        <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+                            <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=500"
+                                loading="lazy" alt="Photo by Ayo Ogunseinde"
+                                class="h-full w-full object-cover object-center" />
+                        </div>
+
+                        <div>
+                            <div class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
+                                <a href="/profile">Greg Jackson</a>
+                            </div>
+                            <p class="text-center text-sm text-gray-500 sm:text-left md:text-sm">CTO / Uptime</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- quote - end -->
+            </div>
+        </div>
+    </div>
+    <!-- testemonials - end -->
+
+    <!-- newsletter - end -->
+
+    <!-- footer - start -->
+    <div class="bg-white">
+        <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <div class=" py-8 text-center text-sm text-black">© 2024 - Present Omegle Re-Imagin. All
+                rights reserved.</div>
+        </footer>
+    </div>
+    <!-- footer - end -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 }); // Adjust the threshold as needed
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
